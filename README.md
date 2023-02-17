@@ -61,9 +61,11 @@ When operated, the flash ADC produces an output that looks something like this:
 ![2bit_graph](https://user-images.githubusercontent.com/110079790/219590965-337d8763-b8fa-4812-b82f-9ab4a9e28acb.png)
 
 
-with sine input of ac magnitude of 1.4 v
-reference voltage of 2 volt
-and VDD of 1.8 volt 
+with sine input of ac magnitude of 1.4 v     
+
+reference voltage of 2 volt     
+
+and VDD of 1.8 volt     
 
 we are getting B1 B0 =10   
 
