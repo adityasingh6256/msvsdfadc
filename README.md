@@ -34,31 +34,40 @@ When operated, the flash ADC produces an output that looks something like this:
 
 ## Comparator    
 
-Low power CMOS charge sharing dynamic latch comparator- it is fastest comparator and we are going to use it in our flash adc.   
+![comp_new_sche](https://user-images.githubusercontent.com/110079790/219589422-3d7d33c4-77ca-4fa0-8cb5-a7c06d9af13f.png)
 
-#### Schematic of comparator   
-
-![comp1](https://user-images.githubusercontent.com/110079790/218647539-c364ddfc-85d1-482e-b271-d20c8c666fd4.png)    
-
-#### testing of comparator  
-
-  simulated output voltage waveform of this circuit when Vref+ = Vref- = 0.9V and Vin+ = Vin- = 1.8V is a square wave. 
-  width of all PMOS is taken Wp=6 um
-  width of all NMOS is taken wn= 3 um
-  and Lp=Ln = 0.18 um   
-  
-  ![out+_out-](https://user-images.githubusercontent.com/110079790/218648190-0290dd7e-23c9-4ef2-a922-6454ec7b9847.png)
-
-In this project, 1.8V supply voltage is used for operation and clock period is 10ns. During the process, speed of the comparator is 100MHz. This design can be used where low power, high speed and low propagation delay are the main requirements.   
-
-#### Transiant analysis    
-
-Giving pulse to Vin and 0.9V to Vref and a pulse    
-
-![graph_comparator](https://user-images.githubusercontent.com/110079790/218647300-6c939b16-f9ce-44e9-a818-44c502ed212b.png)    
+### comparator testing   
 
 
-![graph_comp1](https://user-images.githubusercontent.com/110079790/218647377-eb29df74-2d18-44dc-a824-b2a76236a8ba.png)
+![comp_new1](https://user-images.githubusercontent.com/110079790/219589606-7764b5c0-f718-413b-8216-b98d946054f0.png)    
+
+## Opamp  
+![opamp](https://user-images.githubusercontent.com/110079790/219589822-96f518b5-7155-4f64-9b49-016c5fc0e4f2.png)    
+
+## Substractor and residue Amplifier   
+
+![sub_residue_amp](https://user-images.githubusercontent.com/110079790/219590070-82edc23f-2c86-412d-a693-c32c48fa54c6.png)    
+
+## Encoder   
+
+![encoder](https://user-images.githubusercontent.com/110079790/219590743-dcb1ee34-6b06-49ea-b9e9-6c6a4b082c27.png)    
+
+
+
+## 2bit_flash adc  
+
+![2bitadc_analog](https://user-images.githubusercontent.com/110079790/219590890-407b4a1b-5f21-491d-8a76-bbbffec40e57.png)
+
+![2bit_graph](https://user-images.githubusercontent.com/110079790/219590965-337d8763-b8fa-4812-b82f-9ab4a9e28acb.png)
+
+
+with sine input of ac magnitude of 1.4 v
+reference voltage of 2 volt
+and VDD of 1.8 volt 
+
+we are getting B1 B0 =10   
+
+![2bit_2nd](https://user-images.githubusercontent.com/110079790/219591043-6741acab-00aa-4701-bc13-34f0f65cf01d.png)
 
 
 
