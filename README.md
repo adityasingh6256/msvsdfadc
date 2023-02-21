@@ -46,7 +46,18 @@ When operated, the flash ADC produces an output that looks something like this:
 
 ## Substractor and residue Amplifier   
 
-![sub_residue_amp](https://user-images.githubusercontent.com/110079790/219590070-82edc23f-2c86-412d-a693-c32c48fa54c6.png)    
+![substractor](https://user-images.githubusercontent.com/110079790/220255878-7bafc963-35b6-448f-8607-fa5533c388cc.png)
+
+## substractor and residue amp. testing   
+
+
+for  Rf = 8k ,rest resistors are of 2k    
+
+
+
+![substractor_with_different_r](https://user-images.githubusercontent.com/110079790/220255909-e3648a2d-2724-4553-9422-f5e2fed676dd.png)
+
+
 
 ## Encoder   
 
