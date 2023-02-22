@@ -89,9 +89,14 @@ we are getting B1 B0 =10
 |VDDD|Digital supply voltage||1.8||V|T=-40 to 85C|
 |VREFH|Reference voltage High|||2.3|V|T=-40 to 85C|
 |VREFL|Reference voltage LOW|||O|V|T=-40 to 85C|
+|CLOCK|PULSE |10K||0.5M|V|T=-40 to 85C|
 |RES|Resolution| |4||bit|T=27C|
-|R1,R2|analog input Resistances use in substractor and in comparator input|||2.1|k ohm|T=-40 to 85C|
-|Rf|analog input Resistances| ||2.1|k ohm|T=-40 to 85C|
+|R1,R2|analog input Resistances use in substractor and in comparator input||2.1||k ohm|T=-40 to 85C|
+|Rf|analog input Resistances use in substractor| |8||k ohm|T=-40 to 85C|
+|Rout|analog output Resistances use in comparator| |10||M ohm|T=-40 to 85C|
+|C|capacitance for DAC| |40|80|f F|T=-40 to 85C|
+|IDDA|analog Current supply| |60||u A|T=-40 to 85C|
+
 
 
 
