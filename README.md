@@ -20,17 +20,20 @@ When operated, the flash ADC produces an output that looks something like this:
 
 ## Blocks in two step flash ADC  
 
-### Digital components   
+### Digital components     
 
-1. DAC    
+1. Latch   
 
-2. Latch   
+2. Decoder and encoder
 
-3. Decoder and encoder
+### Analog components    
 
-### Analog components 
 1.comparator   
+
 2.subtractor and residue amplifier  
+
+3. DAC
+
 
 ## Comparator    
 
