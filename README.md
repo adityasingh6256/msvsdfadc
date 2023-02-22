@@ -1,4 +1,4 @@
-# mixed signal flash ADC   
+# mixed signal  2 STEP flash ADC   
 
 ## abstract   
 Flash or parallel converter have the Highest Speed of any Type of ADC.As they use one comaparator per quantization level(2^N-1) and 2^N resistors.The obvious of this Converter is the speed with which one conversion can take place which is Trades High speed with area Counterbalanced by Doubling the area with each bit increased resolution.For example,an 8-bit Converter requires 255 comparators wheras a 9-bit ADC requires 511.Flash converters have traditionally been limited to 6 or 8 bits resolution with the conversion rates of 10-40Ms/s.The disadvantages of flash ADC are the area and power requirements of the 2^N-1 comparators. So,To achive High resolutions with Lower power consumpution Two-step ADCs,pipelined ADCs are introduced to the Flash ADC archietecture.        
@@ -34,12 +34,19 @@ When operated, the flash ADC produces an output that looks something like this:
 
 ## Comparator    
 
-![comp_new_sche](https://user-images.githubusercontent.com/110079790/219589422-3d7d33c4-77ca-4fa0-8cb5-a7c06d9af13f.png)
+
+![comparator_new_sche](https://user-images.githubusercontent.com/110079790/220752213-9238008a-1cc5-4e82-ae70-d0dd0639d32a.png)     
+
 
 ### comparator testing   
 
 
-![comp_new1](https://user-images.githubusercontent.com/110079790/219589606-7764b5c0-f718-413b-8216-b98d946054f0.png)    
+![comptest_schematic](https://user-images.githubusercontent.com/110079790/220752281-9dd7e193-aea8-42af-a248-5231d334a29a.png)    
+
+
+![new_comp_outgraph](https://user-images.githubusercontent.com/110079790/220752323-cee9fbe0-77cf-412b-9554-45c739d41692.png)
+
+   
 
 ## Opamp  
 ![opamp](https://user-images.githubusercontent.com/110079790/219589822-96f518b5-7155-4f64-9b49-016c5fc0e4f2.png)    
@@ -65,23 +72,48 @@ for  Rf = 8k ,rest resistors are of 2k
 
 
 
-## 2bit_flash adc  
+## 2bit_flash adc 
 
-![2bitadc_analog](https://user-images.githubusercontent.com/110079790/219590890-407b4a1b-5f21-491d-8a76-bbbffec40e57.png)
-
-![2bit_graph](https://user-images.githubusercontent.com/110079790/219590965-337d8763-b8fa-4812-b82f-9ab4a9e28acb.png)
+  ![2BIT_FLASH_adc](https://user-images.githubusercontent.com/110079790/220751798-604c8fc8-5c1e-4cf5-88e3-2402960bba88.png)    
 
 
-with sine input of ac magnitude of 1.4 v     
+## Testing 2_bit_flash_ADC  
 
-reference voltage of 2 volt     
 
-and VDD of 1.8 volt     
+![2bit_flash_adc_test_sche](https://user-images.githubusercontent.com/110079790/220750614-a49e7515-d083-4ebf-8427-42684c09cfd2.png)     
 
-we are getting B1 B0 =10   
+### With DC inputs   
 
-![2bit_2nd](https://user-images.githubusercontent.com/110079790/219591043-6741acab-00aa-4701-bc13-34f0f65cf01d.png)
+![2bit_flash_graph](https://user-images.githubusercontent.com/110079790/220751442-a54a6498-a5d1-4a0d-ae71-75d15017d417.png)   
 
+
+### With Sine wave input    
+
+![2bit_flash_sin_vin](https://user-images.githubusercontent.com/110079790/220751542-7b5e93e4-0848-4bb3-a46b-31e07634629c.png)    
+
+## DAC  
+
+### 1_Bit_DAC    
+
+![1bit_dac](https://user-images.githubusercontent.com/110079790/220752537-a1ed79fd-118f-4bc2-a98e-4597716652fa.png)    
+
+### Testing 1bit dac    
+
+![dac_1bit_test](https://user-images.githubusercontent.com/110079790/220752790-1467e2bf-6b43-4b3b-8cfe-6e334d18113f.png)
+
+
+### 2_Bit_DAC    
+
+![2bit_dac](https://user-images.githubusercontent.com/110079790/220752667-a886d1a0-abdb-411b-a337-aed2c173cea6.png)
+
+
+# 2 step flash ADC    
+
+### SCHEMATIC    
+
+![2step_flash_adc_sche](https://user-images.githubusercontent.com/110079790/220753216-2ab48acb-19bb-4a8f-8ee3-6e1806361abc.png)
+
+## Two Step FLASH ADC Performance Parameters      
 
 | Parameter| Description| Min | Type | Max | Unit | Condition |
 | :---:  | :-: | :-: | :-: | :---:  | :-: | :-: |
