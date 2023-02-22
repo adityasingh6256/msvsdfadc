@@ -83,6 +83,15 @@ we are getting B1 B0 =10
 ![2bit_2nd](https://user-images.githubusercontent.com/110079790/219591043-6741acab-00aa-4701-bc13-34f0f65cf01d.png)
 
 
+| Parameter| Description| Min | Type | Max | Unit | Condition |
+| :---:  | :-: | :-: | :-: | :---:  | :-: | :-: |
+|VDDA|Analog supply voltage||3.0||V|T=-40 to 85C|
+|VDDD|Digital supply voltage||1.8||V|T=-40 to 85C|
+|VREFH|Reference voltage High|||2.3|V|T=-40 to 85C|
+|VREFL|Reference voltage LOW|||O|V|T=-40 to 85C|
+|RES|Resolution| |4||bit|T=27C|
+|R1,R2|analog input Resistances use in substractor and in comparator input|||2.1|k ohm|T=-40 to 85C|
+|Rf|analog input Resistances| ||2.1|k ohm|T=-40 to 85C|
 
 
 
