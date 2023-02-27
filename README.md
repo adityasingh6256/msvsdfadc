@@ -41,11 +41,27 @@ When operated, the flash ADC produces an output that looks something like this:
 
 ![analog-input-digital-output](https://user-images.githubusercontent.com/110079790/217728843-af300135-3b83-4b29-9fac-341f427c6425.jpg)    
 
-# 3. Proposed Two step flash ADC   
+# 3. Proposed Two step flash ADC  
 
-![471320_1_En_84_Fig1_HTML](https://user-images.githubusercontent.com/110079790/218645626-87738d95-592e-427e-87e3-603f25d70bd4.png)
+## Reference Circuit:    
+
+ ![Two_step_ADC_block_diagram](https://user-images.githubusercontent.com/110079790/221667038-81728acc-cfbe-4904-a02b-1d112457339a.png)
+
+
+## Circuit details    
+Two step Flash Converter or the Parallel,Feed-Forward ADC.The basic diagram of a two-step Flash converter is seperated into two complete Flash ADCs with feed-Forward circuitry.The first Converter generates a rough Estimation of the value of the input,and the second converter performs a fine Concersion.The of this advantages of this Converter is greatly reduced from that of the Flash Comparator.-From 2^N-1 to 2(2^(N/2)-1) comparators.For Example,As per our circuit a Flash ADC requires 15 comparators(2^4-1),While Two step Flash requires only 6.The trade-off is that the Conversion process takes two-steps intead of one;with the speed limited by the Bandwidth and settling time steps instead of one,with speed limited by the summer.The conversion process is as follows:
+1.After the input is sampled,the most significant bits(MSBs) are converted by the first flash ADC.
+
+2.The results is then converted back to an analog voltage with the DAC and subtracted with the Original input.
+
+3.The result of the subtraction,Known as the residue,is then multiplied by 2^N/2 and input into the second ADC.The multiplication not only allows the two ADC
+to be identical,but also increases the quantanum levels of the signal input into the second ADC.
+
+4.The second ADC produced The least Significant bits through a flash Conversion.
+
 
 # 4. Blocks in two step flash ADC  
+
 
 ### Digital components     
 
@@ -62,8 +78,16 @@ When operated, the flash ADC produces an output that looks something like this:
 3. DAC
 
 
-# 5. Comparator    
+# 5. Comparator  
 
+
+## Truth Table
+| input Voltage| C3C2C1| b1b0 |   
+| :---:  | :-: | :-: |
+|0<Vin<Vref/3|000||00|
+|vref/3<Vin<2Vref/3|001||01|
+|2vref/3<Vin<Vref|011|||10|
+|vref<Vin|111|||11|
 
 ![comparator_new_sche](https://user-images.githubusercontent.com/110079790/220752213-9238008a-1cc5-4e82-ae70-d0dd0639d32a.png)     
 
