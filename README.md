@@ -114,7 +114,10 @@ for  Rf = 8k ,rest resistors are of 2k
 
 ### SCHEMATIC    
 
-![2step_flash_adc_sche](https://user-images.githubusercontent.com/110079790/220753216-2ab48acb-19bb-4a8f-8ee3-6e1806361abc.png)
+![2step_flash_adc_sche](https://user-images.githubusercontent.com/110079790/220753216-2ab48acb-19bb-4a8f-8ee3-6e1806361abc.png)   
+
+![2step_final](https://user-images.githubusercontent.com/110079790/221652574-c408c3b1-0a4c-424f-8f94-b56d87ccc07a.png)
+
 
 ## Two Step FLASH ADC Performance Parameters      
 
