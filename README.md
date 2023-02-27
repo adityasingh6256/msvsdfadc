@@ -20,7 +20,7 @@
    - [10.1. 1_Bit_DAC](#101-1_Bit_DAC)<br>
    - [10.2. Testing 1bit dac](#102-Testing-1bit-dac)<br>
    - [10.3. 2_Bit_DAC](#103-2_Bit_DAC)<br>
- - [11. 2 Step Flash ADC](#11-2-Step-Flash-ADC)<br>
+ - [11. Two Step Flash ADC](#11-Two-Step-Flash-ADC)<br>
  - [12. Two Step FLASH ADC Performance Parameters](#12-Two-Step-FLASH-ADC-Performance-Parameters)<br>
  - [Author](#13-Author)
  - [Contributors](#14-Contributors)
@@ -166,7 +166,7 @@ for  Rf = 8k ,rest resistors are of 2k
 ![2bit_dac](https://user-images.githubusercontent.com/110079790/220752667-a886d1a0-abdb-411b-a337-aed2c173cea6.png)
 
 
-# 11. 2 Step Flash ADC    
+# 11. Two Step Flash ADC    
 
 ### SCHEMATIC    
 
