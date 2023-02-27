@@ -1,6 +1,32 @@
 # mixed signal  2 STEP flash ADC   
 
-## abstract   
+
+# Table of contents
+ - [1. Abstract](#1-Abstract)<br>
+ - [2. Normal flash ADC](#2-Normal-flash-ADC)<br>
+ - [3. Proposed Two step flash ADC](#3-Proposed-Two-step-flash-ADC)<br>
+ - [4. Blocks in two step flash ADC](#4-Blocks-in-two-step-flash-ADC)<br>
+ - [5. Comparator](#5-Comparator)<br>
+   - [5.1. comparator testing](#51-comparator-testing)<br>
+ - [6. Opamp](#6-Opamp)<br>
+ - [7. Substractor and residue Amplifier](#7-Substractor-and-residue-Amplifier)<br>
+   - [7.1. substractor and residue amp. testing](#71-substractor-and-residue-amp.-testing)<br>
+ - [8. Encoder](#8-Encoder)<br>
+ - [9. 2bit_flash adc](#9-2bit_flash-adc)<br>
+   - [9.1. Testing 2_bit_flash_ADC](#91-Testing-2_bit_flash_ADC)<br>
+   - [9.2. Testing it With DC inputs](#92-Testing-it-With-DC-inputs)<br>
+   - [9.3. Testing it With Sine wave input](#93-Testing-it-With-Sine-wave-input)<br>
+ - [10. DAC](#10-DAC)<br>
+   - [10.1. 1_Bit_DAC](#101-1_Bit_DAC)<br>
+   - [10.2. Testing 1bit dac](#102-Testing-1bit-dac)<br>
+   - [10.3. 2_Bit_DAC](#103-2_Bit_DAC)<br>
+ - [11. 2 Step Flash ADC](#11-2-Step-Flash-ADC)<br>
+ - [Author](#12-Author)
+ - [Contributors](#13-Contributors)
+ - [Acknowledgement](#14-Acknowledgement)
+ - [Contact Information](#15-Contact-Information)
+ - [References](#16-References)
+## Abstract   
 Flash or parallel converter have the Highest Speed of any Type of ADC.As they use one comaparator per quantization level(2^N-1) and 2^N resistors.The obvious of this Converter is the speed with which one conversion can take place which is Trades High speed with area Counterbalanced by Doubling the area with each bit increased resolution.For example,an 8-bit Converter requires 255 comparators wheras a 9-bit ADC requires 511.Flash converters have traditionally been limited to 6 or 8 bits resolution with the conversion rates of 10-40Ms/s.The disadvantages of flash ADC are the area and power requirements of the 2^N-1 comparators. So,To achive High resolutions with Lower power consumpution Two-step ADCs,pipelined ADCs are introduced to the Flash ADC archietecture.        
 
 ## Normal flash ADC   
@@ -55,6 +81,7 @@ When operated, the flash ADC produces an output that looks something like this:
 ![opamp](https://user-images.githubusercontent.com/110079790/219589822-96f518b5-7155-4f64-9b49-016c5fc0e4f2.png)    
 
 ## Substractor and residue Amplifier   
+   
 
 ![substractor](https://user-images.githubusercontent.com/110079790/220255878-7bafc963-35b6-448f-8607-fa5533c388cc.png)
 
@@ -89,12 +116,12 @@ for  Rf = 8k ,rest resistors are of 2k
 
 ![2bit_flash_adc_test_sche](https://user-images.githubusercontent.com/110079790/220750614-a49e7515-d083-4ebf-8427-42684c09cfd2.png)     
 
-### With DC inputs   
+### Testing it With DC inputs   
 
 ![2bit_flash_graph](https://user-images.githubusercontent.com/110079790/220751442-a54a6498-a5d1-4a0d-ae71-75d15017d417.png)   
 
 
-### With Sine wave input    
+### Testing it With Sine wave input    
 
 ![2bit_flash_sin_vin](https://user-images.githubusercontent.com/110079790/220751542-7b5e93e4-0848-4bb3-a46b-31e07634629c.png)    
 
@@ -114,7 +141,7 @@ for  Rf = 8k ,rest resistors are of 2k
 ![2bit_dac](https://user-images.githubusercontent.com/110079790/220752667-a886d1a0-abdb-411b-a337-aed2c173cea6.png)
 
 
-# 2 step flash ADC    
+# 2 Step Flash ADC    
 
 ### SCHEMATIC    
 
@@ -140,5 +167,27 @@ for  Rf = 8k ,rest resistors are of 2k
 |IDDA|analog Current supply| |60||u A|T=27C|
 
 
+# 13. Author    
+ 
+ Aditya Singh    
+
+# 14. Contributors   
+
+ -   Aditya Singh
+ -   Kunal Ghosh       
+   
+# 15. Acknowledgement   
+
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+
+# 16. Contact Information
+
+- Aditya Singh ,M.Tech student, IIIT Bangalore, 12345adityasingh@gmail.com
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+# 15. *References*  
+
+1.  [https://github.com/Jayanth-sharma/Mixed-signal-Two-Step-Flash-ADC](https://github.com/Jayanth-sharma/Mixed-signal-Two-Step-Flash-ADC)   
+
+2. Schematic design - [Cadence Virtuoso]
 
 
