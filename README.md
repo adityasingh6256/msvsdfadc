@@ -175,6 +175,14 @@ for  Rf = 8k ,rest resistors are of 2k
 ![2step_final](https://user-images.githubusercontent.com/110079790/221652574-c408c3b1-0a4c-424f-8f94-b56d87ccc07a.png)
 
 
+## With updated supply voltage and reference voltage     
+
+![new_s](https://user-images.githubusercontent.com/110079790/221669501-fb8b31f3-9a72-434d-9f0d-63bb78c9ba20.png)     
+
+
+![new](https://user-images.githubusercontent.com/110079790/221669527-b2636a88-6cec-4d56-9ca3-d475350b397b.png)       
+
+
 # 12. Two Step FLASH ADC Performance Parameters      
 
 | Parameter| Description| Min | Type | Max | Unit | Condition |
