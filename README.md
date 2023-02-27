@@ -77,6 +77,10 @@ for  Rf = 8k ,rest resistors are of 2k
 
 ## 2bit_flash adc 
 
+
+![2bit_flash adc](https://user-images.githubusercontent.com/110079790/221654167-a0e1ae6e-788f-46a2-ab76-a5c9dd0c18b0.png)
+
+
   ![2BIT_FLASH_adc](https://user-images.githubusercontent.com/110079790/220751798-604c8fc8-5c1e-4cf5-88e3-2402960bba88.png)    
 
 
