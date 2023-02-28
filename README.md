@@ -86,7 +86,7 @@ to be identical,but also increases the quantanum levels of the signal input into
 | :---:  | :-: | :-: |
 |0<Vin<Vref/3|000||00|
 |vref/3<Vin<2Vref/3|001||01|
-|2vref/3<Vin<Vref|011|||10|
+|2vref/3<Vin<Vref|011||10|
 |vref<Vin|111|||11|
 
 ![comparator_new_sche](https://user-images.githubusercontent.com/110079790/220752213-9238008a-1cc5-4e82-ae70-d0dd0639d32a.png)     
