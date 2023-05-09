@@ -95,6 +95,9 @@ to be identical,but also increases the quantanum levels of the signal input into
 ## 5.1. comparator testing   
 
 
+we test the comparator design by appling dc supplies at both inputs which one is more positive or negative terminal that will reflect VDD and 0 at output accordingly.
+
+
 ![comptest_schematic](https://user-images.githubusercontent.com/110079790/220752281-9dd7e193-aea8-42af-a248-5231d334a29a.png)    
 
 
@@ -102,7 +105,9 @@ to be identical,but also increases the quantanum levels of the signal input into
 
    
 
-# 6. Opamp  
+# 6. Opamp    
+opamp is needed in substractor and residue amplifier     
+
 ![opamp](https://user-images.githubusercontent.com/110079790/219589822-96f518b5-7155-4f64-9b49-016c5fc0e4f2.png)    
 
 # 7. Substractor and residue Amplifier   
@@ -121,14 +126,16 @@ for  Rf = 8k ,rest resistors are of 2k
 
 
 
-# 8. Encoder   
+# 8. Encoder     
+we need parity encoder for encoding the analog input to digital.
+
 
 ![encoder](https://user-images.githubusercontent.com/110079790/219590743-dcb1ee34-6b06-49ea-b9e9-6c6a4b082c27.png)    
 
 
 
 # 9. 2bit_flash adc 
-
+ this is a simple 2 bit flash adc and using 2 2bit-flash adc we will create our updated design of 4 bit flash adc.
 
 ![2bit_flash adc](https://user-images.githubusercontent.com/110079790/221654167-a0e1ae6e-788f-46a2-ab76-a5c9dd0c18b0.png)
 
@@ -166,8 +173,10 @@ for  Rf = 8k ,rest resistors are of 2k
 ![2bit_dac](https://user-images.githubusercontent.com/110079790/220752667-a886d1a0-abdb-411b-a337-aed2c173cea6.png)
 
 
-# 11. Two Step Flash ADC    
+# 11. Two Step Flash ADC     
 
+ final circuit-     
+ 
 ### SCHEMATIC    
 
 ![2step_flash_adc_sche](https://user-images.githubusercontent.com/110079790/220753216-2ab48acb-19bb-4a8f-8ee3-6e1806361abc.png)   
@@ -199,30 +208,54 @@ for  Rf = 8k ,rest resistors are of 2k
 |Rf|analog input Resistances use in substractor| |8||k ohm|T=-40 to 85C|
 |Rout|analog output Resistances use in comparator| |10||M ohm|T=-40 to 85C|
 |C|capacitance for DAC| |40|80|f F|T=-40 to 85C|
-|IDDA|analog Current supply| |60||u A|T=27C|
+|IDDA|analog Current supply| |60||u A|T=27C|    
+
+# 13. Layout   
+for the layout part in cadence virtuoso we have to do the following-     
+
+1. remove all kind of supply,input,sources that are present in design convert them as ports.     
+2. now open LayoutXL      
+3. Go to Generate-all from sources ->now drag all cells into PR boundary -> in generate place as schematic ->shift+F for seeing source and drain part of mosfets -> go to placement if want- do auto placement -> auto routing -> do DRC-> LVS ->do simulation check of layout -> design is ready for tapeout.   
+
+  ## 'Place as schematic' for our Design   
+  
+    ![layout_4](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/e2404e8b-faf0-4272-8d26-d31c0d85d0b9)    
+
+   ## 'Auto placement'    
+   
+   ![layout_6_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/abb3e2ae-262a-4214-b8d5-e0053a492a4b)
+
+    zoom View-  
+    
+  ![layout_9_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/662673c9-da1f-499f-ae2b-a1734821c5df)
 
 
-# 13. Author    
+# 14. Future work    
+1. DRC and LVS check
+2. Tapout from SCL 
+
+
+# 15. Author    
  
  Aditya Singh    
 
-# 14. Contributors   
+# 16. Contributors   
 
  -   Aditya Singh
  -   Kunal Ghosh       
    
-# 15. Acknowledgement   
+# 17. Acknowledgement   
 
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 
-# 16. Contact Information
+# 18. Contact Information
 
 - Aditya Singh ,M.Tech student, IIIT Bangalore, 12345adityasingh@gmail.com
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
-# 17. *References*  
+# 19. *References*  
 
 1.  [https://github.com/Jayanth-sharma/Mixed-signal-Two-Step-Flash-ADC](https://github.com/Jayanth-sharma/Mixed-signal-Two-Step-Flash-ADC)   
 
-2. Schematic design - [Cadence Virtuoso]
+2. Schematic design - [Cadence Virtuoso]    
 
 
