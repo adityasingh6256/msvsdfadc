@@ -1,0 +1,92 @@
+// Generated for: spectre
+// Generated on: May  8 02:37:51 2023
+// Design library name: aj
+// Design cell name: layout_full
+// Design view name: physConfig
+simulator lang=spectre
+global 0
+
+// Library name: aj
+// Cell name: DAC
+// View name: schematic
+// Inherited view list: physConfig schematic symbol
+subckt DAC D Out VDD Vrefh Vrefl
+ends DAC
+// End of subcircuit definition.
+
+// Library name: aj
+// Cell name: dacnew_2bit
+// View name: schematic
+// Inherited view list: physConfig schematic symbol
+subckt dacnew_2bit D0_LSB D1 Vdd Vout Vrefh Vrefl
+    I0 (D0_LSB net3 Vdd Vrefh Vrefl) DAC
+    I1 (D1 net4 Vdd Vrefh Vrefl) DAC
+ends dacnew_2bit
+// End of subcircuit definition.
+
+// Library name: analogLib
+// Cell name: presistor
+// View name: schematic
+// Inherited view list: physConfig schematic symbol
+subckt presistor PLUS MINUS
+ends presistor
+// End of subcircuit definition.
+
+// Library name: aj
+// Cell name: comp3
+// View name: schematic
+// Inherited view list: physConfig schematic symbol
+subckt comp3 EN INN INP VCC VOUT i_source_comp
+    R0 (VOUT 0) presistor
+ends comp3
+// End of subcircuit definition.
+
+// Library name: aj
+// Cell name: encoder_mos
+// View name: schematic
+// Inherited view list: physConfig schematic symbol
+subckt encoder_mos B0 B1 C1 C2 C3 gnd vdd
+ends encoder_mos
+// End of subcircuit definition.
+
+// Library name: aj
+// Cell name: 2bit_flash_adc
+// View name: schematic
+// Inherited view list: physConfig schematic symbol
+subckt aj_2bit_flash_adc_schematic B0 B1 VCC i_source_comp vin vref
+    I18 (VCC vref vin VCC net4 i_source_comp) comp3
+    I19 (VCC net5 vin VCC net2 i_source_comp) comp3
+    I20 (VCC net3 vin VCC net1 i_source_comp) comp3
+    I10 (B0 B1 net1 net2 net4 0 VCC) encoder_mos
+ends aj_2bit_flash_adc_schematic
+// End of subcircuit definition.
+
+// Library name: aj
+// Cell name: opamp
+// View name: schematic
+// Inherited view list: physConfig schematic symbol
+subckt opamp in1 in2 out2 pwl_current vdd vss
+ends opamp
+// End of subcircuit definition.
+
+// Library name: aj
+// Cell name: layout_full
+// View name: schematic
+// Inherited view list: physConfig schematic symbol
+I2 (b2 b3 supply_1\.8v dac_out Vref_2dac 0) dacnew_2bit
+I1 (b0 b1 supply_3v i_source_comp net3 Vref_adc) \
+        aj_2bit_flash_adc_schematic
+I0 (b2 b3 supply_3v i_source_comp nmos_out Vref_adc) \
+        aj_2bit_flash_adc_schematic
+I11 (net1 net2 net3 PWL_i_op supply_1\.8v 0) opamp
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1e-06 gmin=1e-12 \
+    rforce=1 maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub
