@@ -22,11 +22,13 @@
    - [10.3. 2_Bit_DAC](#103-2_Bit_DAC)<br>
  - [11. Two Step Flash ADC](#11-Two-Step-Flash-ADC)<br>
  - [12. Two Step FLASH ADC Performance Parameters](#12-Two-Step-FLASH-ADC-Performance-Parameters)<br>
- - [Author](#13-Author)
- - [Contributors](#14-Contributors)
- - [Acknowledgement](#15-Acknowledgement)
- - [Contact Information](#16-Contact-Information)
- - [References](#17-References)
+ - [13. Layout](13-Layout)<br>
+ - [Future Work](14-Future-Work)<br>
+ - [Author](#15-Author)<br>
+ - [Contributors](#16-Contributors)<br>
+ - [Acknowledgement](#17-Acknowledgement)<br>
+ - [Contact Information](#18-Contact-Information)<br>
+ - [References](#19-References)<br>
 # 1. Abstract   
 Flash or parallel converter have the Highest Speed of any Type of ADC.As they use one comaparator per quantization level(2^N-1) and 2^N resistors.The obvious of this Converter is the speed with which one conversion can take place which is Trades High speed with area Counterbalanced by Doubling the area with each bit increased resolution.For example,an 8-bit Converter requires 255 comparators wheras a 9-bit ADC requires 511.Flash converters have traditionally been limited to 6 or 8 bits resolution with the conversion rates of 10-40Ms/s.The disadvantages of flash ADC are the area and power requirements of the 2^N-1 comparators. So,To achive High resolutions with Lower power consumpution Two-step ADCs,pipelined ADCs are introduced to the Flash ADC archietecture.        
 
@@ -230,7 +232,7 @@ for the layout part in cadence virtuoso we have to do the following-
   ![layout_9_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/662673c9-da1f-499f-ae2b-a1734821c5df)
 
 
-# 14. Future work    
+# 14. Future Work    
 1. DRC and LVS check
 2. Tapout from SCL 
 
