@@ -220,7 +220,7 @@ for the layout part in cadence virtuoso we have to do the following-
 2. now open LayoutXL      
 3. Go to Generate-all from sources ->now drag all cells into PR boundary -> in generate place as schematic ->shift+F for seeing source and drain part of mosfets -> go to placement if want- do auto placement -> auto routing -> do DRC-> LVS ->do simulation check of layout -> design is ready for tapeout.   
 
-  ## 'Place as schematic' for our Design   
+  ## using 'Place as schematic'    
 
 ![layout_4](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/a913ef2c-9d69-43db-ab99-3a3b2392c2d2)
 
@@ -232,7 +232,7 @@ zoom view-
 ![layout_4_5](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/8219080a-8a07-47b4-938e-257fab816a35)
 
 
-   ## 'Auto placement'    
+   ## using 'Auto placement'    
    
    ![layout_6_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/abb3e2ae-262a-4214-b8d5-e0053a492a4b)
 
