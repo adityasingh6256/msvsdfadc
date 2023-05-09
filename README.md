@@ -22,8 +22,8 @@
    - [10.3. 2_Bit_DAC](#103-2_Bit_DAC)<br>
  - [11. Two Step Flash ADC](#11-Two-Step-Flash-ADC)<br>
  - [12. Two Step FLASH ADC Performance Parameters](#12-Two-Step-FLASH-ADC-Performance-Parameters)<br>
- - [13. Layout](13-Layout)<br>
- - [Future Work](14-Future-Work)<br>
+ - [13. Layout](#13-Layout)<br>
+ - [Future Work](#14-Future-Work)<br>
  - [Author](#15-Author)<br>
  - [Contributors](#16-Contributors)<br>
  - [Acknowledgement](#17-Acknowledgement)<br>
@@ -212,7 +212,8 @@ we need parity encoder for encoding the analog input to digital.
 |C|capacitance for DAC| |40|80|f F|T=-40 to 85C|
 |IDDA|analog Current supply| |60||u A|T=27C|    
 
-# 13. Layout   
+# 13. Layout     
+
 for the layout part in cadence virtuoso we have to do the following-     
 
 1. remove all kind of supply,input,sources that are present in design convert them as ports.     
