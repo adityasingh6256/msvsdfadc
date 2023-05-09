@@ -1,0 +1,126 @@
+// Generated for: spectre
+// Generated on: May  8 02:41:35 2023
+// Design library name: aj
+// Design cell name: 2bit_flash_adc
+// Design view name: schematic
+simulator lang=spectre
+global 0
+
+// Library name: aj
+// Cell name: comp3
+// View name: schematic
+subckt comp3 EN INN INP VCC VOUT i_source_comp
+    M5 (VOUT VOUT2 VCC VCC) p18 w=3.36 l=0.36 as=1.6128 ad=1.6128 ps=7.68 \
+        pd=7.68 m=1
+    M4 (VOUT2 VOUT1 VCC VCC) p18 w=3.36 l=0.36 as=1.6128 ad=1.6128 ps=7.68 \
+        pd=7.68 m=1
+    M3 (VOUT1 VDIFF VCC VCC) p18 w=5.04 l=0.36 as=2.4192 ad=2.4192 \
+        ps=11.04 pd=11.04 m=1
+    M2 (VOUT2 EN VCC VCC) p18 w=3.36 l=0.36 as=1.6128 ad=1.6128 ps=7.68 \
+        pd=7.68 m=1
+    M1 (net1 net1 VCC VCC) p18 w=0.84 l=0.36 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M0 (VDIFF net1 VCC VCC) p18 w=0.84 l=0.36 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M16 (VOUT VOUT2 0 GND) n18 w=1.68 l=0.36 as=0.8064 ad=0.8064 ps=4.32 \
+        pd=4.32 m=1
+    M15 (net5 EN 0 0) n18 w=1.68 l=0.36 as=0.8064 ad=0.8064 ps=4.32 \
+        pd=4.32 m=1
+    M14 (VOUT2 VOUT1 net5 0) n18 w=1.68 l=0.36 as=0.8064 ad=0.8064 ps=4.32 \
+        pd=4.32 m=1
+    M13 (VOUT1 VCC 0 0) n18 w=0.84 l=0.36 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M12 (i_source_comp i_source_comp 0 0) n18 w=0.42 l=0.36 as=0.1984 \
+        ad=0.1984 ps=1.88 pd=1.88 m=1
+    M11 (net3 i_source_comp 0 0) n18 w=0.42 l=0.36 as=0.1984 ad=0.1984 \
+        ps=1.88 pd=1.88 m=1
+    M10 (VDIFF VOUT1 net3 GND) n18 w=1.68 l=0.36 as=0.8064 ad=0.8064 \
+        ps=4.32 pd=4.32 m=1
+    M9 (net1 VOUT2 net3 GND) n18 w=1.68 l=0.36 as=0.8064 ad=0.8064 ps=4.32 \
+        pd=4.32 m=1
+    M8 (net2 VCC 0 0) n18 w=0.42 l=0.36 as=0.1984 ad=0.1984 ps=1.88 \
+        pd=1.88 m=1
+    M7 (VDIFF INP net2 GND) n18 w=0.84 l=0.36 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M6 (net1 INN net2 GND) n18 w=0.84 l=0.36 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    R0 (VOUT 0) resistor r=10M c=0
+ends comp3
+// End of subcircuit definition.
+
+// Library name: aj
+// Cell name: encoder_mos
+// View name: schematic
+subckt encoder_mos B0 B1 C1 C2 C3 gnd vdd
+    M22 (B1 net2 gnd gnd) n18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 \
+        pd=1.88 m=1
+    M19 (net7 C2 gnd gnd) n18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M18 (net2 C1 net7 gnd) n18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M16 (B0 net5 gnd gnd) n18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 \
+        pd=1.88 m=1
+    M13 (net6 C1 gnd gnd) n18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M12 (net5 net4 net6 gnd) n18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M5 (net13 C2 gnd gnd) n18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 \
+        pd=1.88 m=1
+    M4 (net12 C3 gnd gnd) n18 w=0.42 l=0.18 as=0.1984 ad=0.1984 ps=1.88 \
+        pd=1.88 m=1
+    M3 (net9 C2 gnd gnd) n18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M2 (net8 net13 gnd gnd) n18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M1 (net4 net12 net9 gnd) n18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M0 (net4 C3 net8 gnd) n18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M23 (B1 net2 vdd vdd) p18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M21 (net2 C2 vdd vdd) p18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M20 (net2 C1 vdd vdd) p18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M17 (B0 net5 vdd vdd) p18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M15 (net5 C1 vdd vdd) p18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M14 (net5 net4 vdd vdd) p18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M11 (net13 C2 vdd vdd) p18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M10 (net12 C3 vdd vdd) p18 w=0.84 l=0.18 as=0.4032 ad=0.4032 ps=2.64 \
+        pd=2.64 m=1
+    M9 (net4 net13 net11 vdd) p18 w=1.68 l=0.18 as=0.8064 ad=0.8064 \
+        ps=4.32 pd=4.32 m=1
+    M8 (net11 net12 vdd vdd) p18 w=1.68 l=0.18 as=0.8064 ad=0.8064 ps=4.32 \
+        pd=4.32 m=1
+    M7 (net10 C3 vdd vdd) p18 w=1.68 l=0.18 as=0.8064 ad=0.8064 ps=4.32 \
+        pd=4.32 m=1
+    M6 (net4 C2 net10 vdd) p18 w=1.68 l=0.18 as=0.8064 ad=0.8064 ps=4.32 \
+        pd=4.32 m=1
+ends encoder_mos
+// End of subcircuit definition.
+
+// Library name: aj
+// Cell name: 2bit_flash_adc
+// View name: schematic
+I18 (VCC vref vin VCC net4 i_source_comp) comp3
+I19 (VCC net5 vin VCC net2 i_source_comp) comp3
+I20 (VCC net3 vin VCC net1 i_source_comp) comp3
+I10 (B0 B1 net1 net2 net4 0 VCC) encoder_mos
+R0 (net5 net3) rnmpoly2t l=5.2 w=1 m=1 ssegs=1
+R1 (net3 0) rnmpoly2t l=5.2 w=1 m=1 ssegs=1
+R5 (vref net5) rnmpoly2t l=5.2 w=1 m=1 ssegs=1
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1e-06 gmin=1e-12 \
+    rforce=1 maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub
