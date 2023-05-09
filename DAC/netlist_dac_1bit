@@ -1,0 +1,31 @@
+// Generated for: spectre
+// Generated on: May  8 02:48:03 2023
+// Design library name: aj
+// Design cell name: DAC
+// Design view name: schematic
+simulator lang=spectre
+global 0
+
+// Library name: aj
+// Cell name: DAC
+// View name: schematic
+M11 (Out D Vrefh 0) n18 w=6 l=0.18 as=2.88 ad=2.88 ps=12.96 pd=12.96 m=1
+M9 (Out net1 Vrefl 0) n18 w=6 l=0.18 as=2.88 ad=2.88 ps=12.96 pd=12.96 m=1
+M8 (net1 D 0 0) n18 w=0.42*10 l=0.18 as=0.48*(0.42*10) ad=0.48*(0.42*10) \
+        ps=2*((0.42*10)+0.48) pd=2*((0.42*10)+0.48) m=1
+M10 (Vrefl D Out VDD) p18 w=3 l=0.18 as=1.44 ad=1.44 ps=6.96 pd=6.96 m=1
+M7 (net1 D VDD VDD) p18 w=0.42*10*3 l=0.18 as=0.48*(0.42*10*3) \
+        ad=0.48*(0.42*10*3) ps=2*((0.42*10*3)+0.48) \
+        pd=2*((0.42*10*3)+0.48) m=1
+M6 (Vrefh net1 Out VDD) p18 w=3 l=0.18 as=1.44 ad=1.44 ps=6.96 pd=6.96 m=1
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1e-06 gmin=1e-12 \
+    rforce=1 maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

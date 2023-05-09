@@ -1,0 +1,71 @@
+// Generated for: spectre
+// Generated on: May  8 02:44:06 2023
+// Design library name: aj
+// Design cell name: 10_bit_dac_new
+// Design view name: schematic
+simulator lang=spectre
+global 0
+
+// Library name: aj
+// Cell name: DAC
+// View name: schematic
+subckt DAC D Out VDD Vrefh Vrefl
+    M11 (Out D Vrefh 0) n18 w=6 l=0.18 as=2.88 ad=2.88 ps=12.96 pd=12.96 \
+        m=1
+    M9 (Out net1 Vrefl 0) n18 w=6 l=0.18 as=2.88 ad=2.88 ps=12.96 pd=12.96 \
+        m=1
+    M8 (net1 D 0 0) n18 w=0.42*10 l=0.18 as=0.48*(0.42*10) \
+        ad=0.48*(0.42*10) ps=2*((0.42*10)+0.48) pd=2*((0.42*10)+0.48) m=1
+    M10 (Vrefl D Out VDD) p18 w=3 l=0.18 as=1.44 ad=1.44 ps=6.96 pd=6.96 \
+        m=1
+    M7 (net1 D VDD VDD) p18 w=0.42*10*3 l=0.18 as=0.48*(0.42*10*3) \
+        ad=0.48*(0.42*10*3) ps=2*((0.42*10*3)+0.48) \
+        pd=2*((0.42*10*3)+0.48) m=1
+    M6 (Vrefh net1 Out VDD) p18 w=3 l=0.18 as=1.44 ad=1.44 ps=6.96 pd=6.96 \
+        m=1
+ends DAC
+// End of subcircuit definition.
+
+// Library name: aj
+// Cell name: 10_bit_dac_new
+// View name: schematic
+I9 (D9 net32 net9 Vrefh Vrefl) DAC
+I8 (D8 net31 net9 Vrefh Vrefl) DAC
+I7 (D7 net30 net9 Vrefh Vrefl) DAC
+I6 (D6 net29 net9 Vrefh Vrefl) DAC
+I5 (D5 net28 net9 Vrefh Vrefl) DAC
+I4 (D4 net27 net9 Vrefh Vrefl) DAC
+I3 (D3 net26 net9 Vrefh Vrefl) DAC
+I2 (D2 net25 net9 Vrefh Vrefl) DAC
+I1 (D1 net24 net9 Vrefh Vrefl) DAC
+I0 (D0_LSB net23 net9 Vrefh Vrefl) DAC
+C19 (Vout net32) cmim_sq w=4 l=9.275 m=1
+C17 (net47 Vout) cmim_sq w=4 l=18.75 m=1
+C16 (net47 net31) cmim_sq w=4 l=9.275 m=1
+C15 (net46 net30) cmim_sq w=4 l=9.275 m=1
+C14 (net46 net47) cmim_sq w=4 l=18.75 m=1
+C13 (net43 net46) cmim_sq w=4 l=18.75 m=1
+C12 (net43 net29) cmim_sq w=4 l=9.275 m=1
+C11 (net42 net28) cmim_sq w=4 l=9.275 m=1
+C10 (net42 net43) cmim_sq w=4 l=18.75 m=1
+C9 (net39 net42) cmim_sq w=4 l=18.75 m=1
+C8 (net39 net27) cmim_sq w=4 l=9.275 m=1
+C7 (net38 net26) cmim_sq w=4 l=9.275 m=1
+C6 (net38 net39) cmim_sq w=4 l=18.75 m=1
+C5 (net35 net38) cmim_sq w=4 l=18.75 m=1
+C4 (net35 net25) cmim_sq w=4 l=9.275 m=1
+C3 (net34 net24) cmim_sq w=4 l=9.275 m=1
+C1 (net34 net35) cmim_sq w=4 l=18.75 m=1
+C2 (net18 net34) cmim_sq w=4 l=18.75 m=1
+C0 (net18 net23) cmim_sq w=4 l=9.275 m=1
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1e-06 gmin=1e-12 \
+    rforce=1 maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub
