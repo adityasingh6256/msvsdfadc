@@ -279,4 +279,4 @@ for the layout part in cadence virtuoso we have to do the following-
 
 2. Schematic design - [Cadence Virtuoso]    
 
-
+3. VSD IP Specs-Analog & Mixed Signal IP- ADC (https://www.vlsisystemdesign.com/vsd-ip-specs)
