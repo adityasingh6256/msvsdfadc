@@ -222,28 +222,28 @@ for the layout part in cadence virtuoso we have to do the following-
 
   ## Schematic   
   
-![layout_le1](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/87a7d33b-b883-4e77-a7e6-3b8d90020cb8)
+    ![layout_le1](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/87a7d33b-b883-4e77-a7e6-3b8d90020cb8)
 
 
   ## using 'Place as schematic'    
 
-![layout_4](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/a913ef2c-9d69-43db-ab99-3a3b2392c2d2)
+    ![layout_4](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/a913ef2c-9d69-43db-ab99-3a3b2392c2d2)
 
 
-zoom view-   
+    zoom view-   
 
-![layout_4_6](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/5344868c-698c-41a8-b93d-23b3d81fcb73)   
+    ![layout_4_6](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/5344868c-698c-41a8-b93d-23b3d81fcb73)   
 
-![layout_4_5](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/8219080a-8a07-47b4-938e-257fab816a35)
+     ![layout_4_5](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/8219080a-8a07-47b4-938e-257fab816a35)
 
 
    ## using 'Auto placement'    
    
-   ![layout_6_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/abb3e2ae-262a-4214-b8d5-e0053a492a4b)
+      ![layout_6_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/abb3e2ae-262a-4214-b8d5-e0053a492a4b)
 
-    zoom View-  
+        zoom View-  
     
-  ![layout_9_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/662673c9-da1f-499f-ae2b-a1734821c5df)
+      ![layout_9_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/662673c9-da1f-499f-ae2b-a1734821c5df)
 
 
 # 14. Future Work    
