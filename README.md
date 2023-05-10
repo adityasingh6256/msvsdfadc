@@ -253,7 +253,7 @@ for the layout part in cadence virtuoso we have to do the following-
 # 14. Future Work    
 1. DRC and LVS check     
 2. post layout simulation    
-3. Tapout from SCL    
+3. Tape-out in SCL 180nm    
 
 
 # 15. Author    
