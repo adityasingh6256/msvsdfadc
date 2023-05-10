@@ -247,8 +247,9 @@ zoom view-
 
 
 # 14. Future Work    
-1. DRC and LVS check
-2. Tapout from SCL 
+1. DRC and LVS check     
+2. post layout simulation    
+3. Tapout from SCL    
 
 
 # 15. Author    
