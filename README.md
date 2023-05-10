@@ -277,6 +277,6 @@ for the layout part in cadence virtuoso we have to do the following-
 
 1.  [Mixed-signal-Two-Step-Flash-ADC](https://github.com/Jayanth-sharma/Mixed-signal-Two-Step-Flash-ADC/)   
 2. [VSD IP Specs-> Analog & Mixed Signal IP -> ADC](https://www.vlsisystemdesign.com/vsd-ip-specs/)    
-3. [ieee paper-3-Bit_High_Speed_Flash_ADC](https://www.researchgate.net/publication/318286256_Design_Implementation_of_3-Bit_High_Speed_Flash_ADC_for_Wireless_LAN_Applications/)
-4. [paper-4-BIT_TWO_STEP_FLASH_ADC](https://www.researchgate.net/publication/312523801_IMPLEMENTATION_OF_4-BIT_TWO_STEP_FLASH_ADC_USING_180nm_TECHNOLOGY/)
+3. [research paper-> 3 Bit High Speed Flash ADC](https://www.researchgate.net/publication/318286256_Design_Implementation_of_3-Bit_High_Speed_Flash_ADC_for_Wireless_LAN_Applications/)
+4. [research paper-> 4 bit step flash ADC](https://www.researchgate.net/publication/312523801_IMPLEMENTATION_OF_4-BIT_TWO_STEP_FLASH_ADC_USING_180nm_TECHNOLOGY/)
  
