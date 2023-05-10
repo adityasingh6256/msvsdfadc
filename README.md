@@ -247,6 +247,8 @@ for the layout part in cadence virtuoso we have to do the following-
         zoom View-  
 ![layout_9_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/a29a4c55-715d-40e5-a0e4-f181c02e4f9b)
 
+![layout_le2](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/fba145ed-73fa-4b6a-9c4b-4995477e06e7)
+
 
 # 14. Future Work    
 1. DRC and LVS check     
