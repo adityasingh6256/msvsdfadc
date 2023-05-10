@@ -221,29 +221,31 @@ for the layout part in cadence virtuoso we have to do the following-
 3. Go to Generate-all from sources ->now drag all cells into PR boundary -> in generate place as schematic ->shift+F for seeing source and drain part of mosfets -> go to placement if want- do auto placement -> auto routing -> do DRC-> LVS ->do simulation check of layout -> design is ready for tapeout.   
 
   ## Schematic   
-  
-    ![layout_le1](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/87a7d33b-b883-4e77-a7e6-3b8d90020cb8)
+
+![layout_le1](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/90480db4-1ed2-4eea-ac6c-49bb3dd36484)
 
 
   ## using 'Place as schematic'    
 
-    ![layout_4](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/a913ef2c-9d69-43db-ab99-3a3b2392c2d2)
+![layout_4](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/6e0f0106-da48-4fe8-add7-5d70dc9508a9)
+
 
 
     zoom view-   
 
-    ![layout_4_6](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/5344868c-698c-41a8-b93d-23b3d81fcb73)   
+  ![layout_4_6](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/04f3f1ac-2e8b-4388-b9a6-3e8a9e8bf23b)
 
-     ![layout_4_5](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/8219080a-8a07-47b4-938e-257fab816a35)
+![layout_4_5](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/30bbb3c0-4e06-4607-8884-b0ec424e19f0)
+
 
 
    ## using 'Auto placement'    
-   
-      ![layout_6_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/abb3e2ae-262a-4214-b8d5-e0053a492a4b)
+
+![layout_6_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/e80029fb-d5e0-4a9d-a540-2d5534f39ef9)
+
 
         zoom View-  
-    
-      ![layout_9_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/662673c9-da1f-499f-ae2b-a1734821c5df)
+![layout_9_autoplace](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/a29a4c55-715d-40e5-a0e4-f181c02e4f9b)
 
 
 # 14. Future Work    
