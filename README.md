@@ -250,10 +250,9 @@ for the layout part in cadence virtuoso we have to do the following-
 ![layout_le2](https://github.com/adityasingh6256/msvsdfadc/assets/110079790/fba145ed-73fa-4b6a-9c4b-4995477e06e7)
 
 
-# 14. Future Work    
-1. DRC and LVS check     
-2. post layout simulation    
-3. Tape-out in SCL 180nm    
+# 14. Future Work        
+1. post layout simulation    
+2. Tape-out in SCL 180nm    
 
 
 # 15. Author    
